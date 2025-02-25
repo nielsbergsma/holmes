@@ -38,14 +38,14 @@ library
                , Data.JoinSemilattice.Class.Zipping
                , Data.CDCL
 
-  build-depends: base >= 4.12 && < 4.16
-               , containers >= 0.6 && < 0.7
-               , hashable >= 1.3 && < 1.4
-               , hedgehog >= 1.0 && < 1.1
-               , logict >= 0.7 && < 0.8
-               , mtl >= 2.2 && < 2.3
-               , primitive >= 0.7 && < 0.8
-               , transformers >= 0.5 && < 0.6
+  build-depends: base >= 4.12 && < 4.21
+               , containers >= 0.6 && < 0.8
+               , hashable >= 1.3 && < 1.6
+               , hedgehog >= 1.0 && < 1.6
+               , logict >= 0.7 && < 0.9
+               , mtl >= 2.2 && < 2.4
+               , primitive >= 0.7 && < 0.10
+               , transformers >= 0.5 && < 0.7
                , unordered-containers >= 0.2 && < 0.3
 
   ghc-options: -Wall -Wextra
@@ -87,12 +87,12 @@ test-suite test
   main-is:  Main.hs
 
   build-depends: base
-               , containers >= 0.6 && < 0.7
-               , hashable >= 1.3 && < 1.4
-               , hedgehog >= 1.0 && < 1.1
+               , containers >= 0.6 && < 0.8
+               , hashable >= 1.3 && < 1.6
+               , hedgehog >= 1.0 && < 1.6
                , holmes
-               , primitive >= 0.7 && < 0.8
-               , transformers >= 0.5 && < 0.6
+               , primitive >= 0.7 && < 0.10
+               , transformers >= 0.5 && < 0.7
                , tasty >= 1.2 && < 1.5
                , tasty-discover
                , tasty-hedgehog
